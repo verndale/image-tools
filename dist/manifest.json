@@ -1,0 +1,18 @@
+{
+  "_vendor-77b65f27.js": {
+    "file": "scripts/vendor-77b65f27.js"
+  },
+  "main.js": {
+    "file": "scripts/main.bundle.js",
+    "imports": [
+      "_vendor-77b65f27.js"
+    ],
+    "isEntry": true,
+    "src": "main.js"
+  },
+  "src/scss/styles.scss": {
+    "file": "css/styles.css",
+    "isEntry": true,
+    "src": "src/scss/styles.scss"
+  }
+}

@@ -1,0 +1,26 @@
+@use "../core/breakpoints";
+@use "sass-rem" as rem;
+
+.footer {
+  background-color: var(--wild-sand);
+  padding: rem.convert(20px 0 15px);
+  text-align: center;
+
+  @include breakpoints.mq(tablet) {
+    padding: rem.convert(40px 0 30px);
+  }
+}
+
+.footer__copyright {
+  font-size: rem.convert(12px);
+  margin: rem.convert(0 0 2px);
+
+  @include breakpoints.mq(tablet) {
+    font-size: rem.convert(14px);
+    margin-block-end: rem.convert(5px);
+  }
+
+  a {
+    font-weight: 600;
+  }
+}

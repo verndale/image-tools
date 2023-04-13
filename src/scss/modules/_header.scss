@@ -1,0 +1,39 @@
+@use "../core/breakpoints";
+@use "sass-rem" as rem;
+
+.header {
+  padding-block: rem.convert(10px) rem.convert(8px);
+
+  @include breakpoints.mq(tablet) {
+    padding-block: rem.convert(15px);
+  }
+}
+
+.header__logo {
+  align-items: center;
+  color: var(--verndale-black);
+  display: flex;
+
+  span {
+    display: inline-flex;
+    font-family: var(--secondary-font);
+    font-size: rem.convert(20px);
+    margin-inline-end: rem.convert(5px);
+    padding-block-end: rem.convert(5px);
+
+    @include breakpoints.mq(tablet) {
+      font-size: rem.convert(22px);
+      margin-inline-end: rem.convert(8px);
+      padding-block-end: rem.convert(7px);
+    }
+  }
+
+  img {
+    block-size: auto;
+    inline-size: rem.convert(120px);
+
+    @include breakpoints.mq(tablet) {
+      inline-size: rem.convert(160px);
+    }
+  }
+}

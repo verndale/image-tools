@@ -1,0 +1,17 @@
+// Include core styles
+@use "scss-reset/reset";
+@use "core/breakpoints";
+@use "core/colorpalette";
+@use "core/variables";
+@use "core/typography";
+@use "core/global";
+@use "core/grid";
+@use "../../node_modules/highlight.js/scss/atom-one-dark";
+
+@use "components/picture";
+
+@use "modules/header";
+@use "modules/intro";
+@use "modules/generic-content";
+@use "modules/scurve";
+@use "modules/footer";

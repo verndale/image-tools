@@ -1,0 +1,23 @@
+@use "../core/breakpoints";
+@use "sass-rem" as rem;
+
+.picture {
+  max-inline-size: rem.convert(700px);
+
+  picture {
+    background-color: var(--white);
+    box-shadow: rem.convert(0 3px 15px -3px) var(--verndale-black);
+    display: flex;
+    padding: rem.convert(10px);
+
+    img {
+      block-size: auto;
+      inline-size: 100%;
+    }
+  }
+}
+
+.picture__caption {
+  font-size: rem.convert(14px);
+  margin-block-start: rem.convert(15px);
+}

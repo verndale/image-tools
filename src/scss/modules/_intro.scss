@@ -1,0 +1,36 @@
+@use "../core/breakpoints";
+@use "sass-rem" as rem;
+
+.intro {
+  background-color: var(--wild-sand);
+  padding: rem.convert(40px 0);
+  text-align: center;
+
+  @include breakpoints.mq(tablet) {
+    padding: rem.convert(100px 0);
+  }
+
+  .container {
+    max-inline-size: rem.convert(840px);
+  }
+}
+
+.intro__description {
+  margin-block-end: 20px;
+}
+
+.intro__url {
+  background-color: var(--white);
+  border-radius: rem.convert(5px);
+  font-size: rem.convert(14px);
+  padding: rem.convert(10px 20px);
+
+  @include breakpoints.mq(tablet) {
+    font-size: rem.convert(16px);
+  }
+
+  a {
+    color: var(--primary-purple);
+    text-decoration: none;
+  }
+}
